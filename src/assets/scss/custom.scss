@@ -1,0 +1,139 @@
+[data-theme="dark"] {
+    --c-primary-main: #1ecbdd;
+    --c-primary-dark: #110a3f;
+    --logo-header-height: 50px;
+    --c-body-bg: #235476;
+    --gradient-border: linear-gradient(to bottom left, #21c1d7, #495497);
+    --logo-footer-height: 66px;
+    --rs-list-border: var(--c-primary-main);
+}
+
+body {
+    background: linear-gradient(360deg, #110a3f 0%, #235476 100%);
+    background-attachment: fixed;
+}
+
+// [data-nav="sticky"] .site-header.small {
+//     background-color: #235476;
+// }
+
+.markdown-body {
+    * {
+        background-color: initial !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+    }
+    iframe {
+        max-width: 100% !important;
+        margin: auto;
+    }
+}
+
+button[disabled],
+html input[disabled] {
+    opacity: 0.6;
+}
+
+.header-nav {
+    .nav-item a {
+        color: var(--c-primary-main);
+        &::after {
+            background-color: var(--c-primary-main);
+        }
+    }
+}
+
+.site-header:not(.small) .header-inner {
+    border-bottom: 1px solid var(--c-primary-main);
+    padding-bottom: 12px;
+}
+
+.border-color-primary {
+    border-color: var(--c-primary-main);
+}
+
+.text-primary {
+    color: var(--c-primary-main) !important;
+}
+
+[data-nav="sticky"] .site-header.small {
+    // padding: 12px 0 0 0;
+    border-bottom: 1px solid var(--c-primary-main);
+}
+
+.share-links a,
+.share-links button {
+    color: var(--c-primary-dark) !important;
+    background: var(--c-primary-main) !important;
+}
+
+[data-theme="dark"] .email-subs-wrap input[type="email"],
+[data-theme="dark"] .email-subs-wrap input[type="text"] {
+    --c-text-main: #fff;
+    --c-text-light: inherit;
+}
+
+.email-subs-wrap {
+    background: transparent;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-image-source: var(--gradient-border);
+    input {
+        border: 1px solid var(--c-primary-main) !important;
+        border-radius: 50px;
+        background-color: transparent !important;
+    }
+}
+
+.QuizModal {
+    .rs-modal-content {
+        background: linear-gradient(to bottom left, #2f4470, #292353);
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        .rs-list-item {
+            background: transparent;
+            cursor: pointer;
+            box-shadow: 0 -1px 0 var(--c-primary-main),
+                0 1px 0 var(--c-primary-main);
+
+            &.selected {
+                background: var(--c-primary-main);
+            }
+        }
+    }
+}
+
+.bg-transparent {
+    background: transparent !important;
+}
+
+.btn {
+    border-radius: 30px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.comment-wrap {
+    background: transparent;
+}
+
+.post-content {
+    scroll-margin-top: 150px;
+}
+.rs-pagination-btn {
+    color: white !important;
+}
+.rs-pagination-btn-active,
+.rs-pagination-btn:hover {
+    background-color: var(--c-primary-main) !important;
+    border-color: var(--c-primary-main) !important;
+}
+.search-input {
+    border: 1px solid var(--c-primary-main) !important;
+}
+.search-result .search-results-item {
+    border-bottom: 1px solid #fff;
+}
+.rs-dropdown-menu {
+    background-color: var(--c-body-bg);
+}
